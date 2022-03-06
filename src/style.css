@@ -14,6 +14,8 @@ body {
     background-color: lightgray;
     font-weight: bold;
     font-family: Helvetica, serif;
+    font-size: 2em;
+    text-transform: uppercase;
     margin-top: 5%;
 
     display: flex;
@@ -23,5 +25,6 @@ body {
 }
 
 #compliment {
-    margin: 14px
+    margin: 14px;
+    text-align: center;
 }

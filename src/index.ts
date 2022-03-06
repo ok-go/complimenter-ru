@@ -1,6 +1,6 @@
 window.onload = () => {
     const node = document.createElement('div')
-    const content = () => (`<div>'❤❤❤'</div><div id="compliment">${makeCompliment().toUpperCase()}</div><div>'❤❤❤'</div>`)
+    const content = () => (`<div>'❤❤❤'</div><div id="compliment">${makeCompliment()}</div><div>'❤❤❤'</div>`)
 
     node.innerHTML = content()
     node.onclick = () => (node.innerHTML = content())
@@ -23,15 +23,15 @@ type Word = [string?, string?, string?];
 
 
 const templates = new RichArray([
-    `9 из 10 врачей говорят`,
-    'ученые выяснили что',
-    `хочу сказать`,
-    `не могу поверить что`,
-    'обязан сказать',
+    `9&nbsp;из&nbsp;10&nbsp;врачей&nbsp;говорят`,
+    'ученые&nbsp;выяснили&nbsp;что',
+    `хочу&nbsp;сказать`,
+    `не&nbsp;могу&nbsp;поверить&nbsp;что`,
+    'обязан&nbsp;сказать',
     'считаю',
     'уверен',
-    'это правда -',
-    'люди говорят',
+    'это&nbsp;правда',
+    'люди&nbsp;говорят',
 ])
 const adverbs = new RichArray([
     'абсолютно',
